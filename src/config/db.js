@@ -1,8 +1,10 @@
-require('dotenv').config();
+import dotenv from "dotenv";
 
-module.exports = {
+dotenv.config();
+
+const databaseConfig = {
   development: {
-    dialect: 'postgres',
+    dialect: "postgres",
     host: process.env.DATABASE_HOST,
     username: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
@@ -12,7 +14,7 @@ module.exports = {
     },
   },
   production: {
-    dialect: 'postgres',
+    dialect: "postgres",
     host: process.env.DATABASE_HOST,
     username: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
@@ -20,5 +22,7 @@ module.exports = {
     define: {
       logging: false,
     },
-  }
+  },
 };
+
+export default databaseConfig;

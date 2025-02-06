@@ -27,7 +27,7 @@ export default class Transaction extends Model {
             },
             {
                 sequelize,
-                tableName: 'transactions',
+                tableName: 'Transactions',
             }
         );
 

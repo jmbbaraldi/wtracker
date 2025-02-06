@@ -10,6 +10,7 @@ export default class Wallet extends Model {
                 },
                 address: {
                     type: Sequelize.STRING,
+                    unique: true,
                     defaultValue: '',
                 },
                 emoji: {
@@ -27,7 +28,7 @@ export default class Wallet extends Model {
             },
             {
                 sequelize,
-                tableName: 'wallets',
+                tableName: 'Wallets',
             }
         );
     }

@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize';
-import databaseConfig from '../config/database.js';
+import databaseConfig from '../config/db.js';
 import Wallet from '../models/walletModel.js';
 import Transaction from '../models/transactionModel.js';
 
